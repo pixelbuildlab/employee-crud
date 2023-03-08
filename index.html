@@ -1,0 +1,161 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <title>EMPLOYEE CRUD OPS</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content-container">
+        <header>
+          <h1>Employee Data - CRUD in JS</h1>
+        </header>
+        <main>
+          <div>
+            <div class="add-data">
+              <form action="#">
+                <label for="fname">Full Name</label>
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="Full Name"
+                  required="yes"
+                />
+                <label for="age">Age</label>
+                <input
+                  type="number"
+                  name="age"
+                  id="age"
+                  min="15"
+                  max="65"
+                  placeholder="Age"
+                  autocomplete="no"
+                />
+                <label for="position">Position</label>
+                <select name="position" id="position" required>
+                  <option value="" selected="selected">
+                    Select a Position
+                  </option>
+                </select>
+                <label for="salary">Salary</label>
+                <input
+                  type="number"
+                  name="salary"
+                  id="salary"
+                  min="0"
+                  placeholder="Salary"
+                />
+                <label for="gender">Gender</label>
+                <div class="row">
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="male"
+                    id="male"
+                    required="yes"
+                  />
+                  <label for="male">Male<i class="fa-solid fa-mars"></i></label>
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="female"
+                    id="female"
+                    required="yes"
+                  />
+                  <label for="female"
+                    >Female<i class="fa-solid fa-venus"></i
+                  ></label>
+                </div>
+                <label for="email">E-Mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  autocomplete="no"
+                  required="yes"
+                  placeholder="E-Mail"
+                />
+                <div class="controller">
+                  <button type="button" id="updatebtn" class="hide">
+                    Update
+                  </button>
+                  <input type="submit" value="Submit" id="submit" />
+                  <input type="reset" value="Reset" />
+                </div>
+              </form>
+            </div>
+            <div class="result-content">
+              <h3>Status:</h3>
+              <span id="result"></span>
+            </div>
+          </div>
+          <div class="show-data">
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Sr.</th>
+                    <th>Full Name</th>
+                    <th>Age</th>
+                    <th>Position</th>
+                    <th>Gender</th>
+                    <th>Salary</th>
+                    <th>E-Mail</th>
+                    <th>Edit</th>
+                    <th>Remove</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- <tr>
+                    <td>1</td>
+                    <td>Muhammad Waqar</td>
+                    <td>23</td>
+                    <td>internee</td>
+                    <td>Male<i class="fa-solid fa-mars"></i></td>
+                    <td>50,000</td>
+                    <td>email@address.com</td>
+                    <td>
+                      <i class="fa-regular fa-pen-to-square" id="edit"></i>
+                    </td>
+                    <td><i class="fa-solid fa-trash" id="delete"></i></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Mira Amin</td>
+                    <td>44</td>
+                    <td>Manager</td>
+                    <td>Female<i class="fa-solid fa-venus"></i></td>
+                    <td>20,000</td>
+                    <td>female@address.com</td>
+                    <td><i class="fa-regular fa-pen-to-square"></i></td>
+                    <td><i class="fa-solid fa-trash"></i></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Sultan Meer</td>
+                    <td>20</td>
+                    <td>Supervisor</td>
+                    <td>male<i class="fa-solid fa-mars"></i></td>
+                    <td>10,000</td>
+                    <td>male1@address.com</td>
+                    <td><i class="fa-regular fa-pen-to-square"></i></td>
+                    <td><i class="fa-solid fa-trash"></i></td>
+                  </tr> -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- <script src="app.js"></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>
